@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+img {
+    border: 2px solid rgb(126, 112, 112);
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   font-weight: normal;
+   background: #f1f1f1;
+   color: #0F141E;
+}
+
+h1 {
+   color: rgb(28, 52, 100);
+   font-weight: bold; 
+}
+
+h2 {
+   color: rgb(15, 82, 76);
+   font-weight: bold;
+}
+
+.container {
+   max-width: 750px;
+   margin: auto;
+   padding-top: 25px;
+}
+
+.avatar {
+   width: 150px;
+   border-radius: 25px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+
+}
+.info {
+   margin-bottom: 20px;
+   display: flex;
+}
+
+.info-text {
+   margin-left: 30px;
+}
+
+.info-text p {
+   font-style: italic;
+   font-weight: bold;
+   color: #86898f;
+   margin: 0;
+
+}
+
+.info h2 {
+   margin: 10px;
+}
+
+@media (max-width: 650px) {
+   .info {
+      display: block;
+      text-align: center;
+   }
+}
+
+
+.hobby {
+   color: saddlebrown;
+}
+ 
+.shapka {
+   background: rgb(162, 167, 241); 
+   color: #1a0606;
+   font-size: 14px;
+}
+
+.card {
+/*   border: 1px solid lavender;*/
+   border-radius: 10px;
+/*   background-color: lavender;*/
+   padding: 15px 20px;
+   margin-bottom: 20px;
+}
+
+.card h2 {
+   margin-bottom: 15px;
+}
+.bg-hobby {
+   background: #d3d3d3;
+}
+
+.bg-work {
+   background: #add8e6;
+}
+
+.bg-contact {
+   background: #f0e68c;
+
+}
+
+ .btn {
+     background: #111;
+     padding: 15px 15px;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     border-radius: 10px; 
+     font-family: inherit;
+     font-size: 16px;
+ }
+
+ .btn:hover {
+    opacity: 0.8;
+    color: orange;
+ }
+
+ .btn:active {
+    color: sienna;
+ }
+
+ .btn:visited {
+    color: blue;
+ }
+
+ a {
+    color: #333;
+    text-decoration: none;
+    font-size:15px;
+}
+
+a:hover {
+    color: sienna;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+   color: orange;   
+}
+
+.hobby {
+   padding: 0 15px;
+}
+
+.hobby li {
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+.worked {
+   width: 100%;
+}
+
+.worked td {
+   padding-bottom: 5px;
+}
+
+.worked td:nth-child(1) {
+   color: #8b4513;
+   font-weight: bold;
+}
+
+.mf h2 {
+   text-align: center;
+}
+
+.mfr {
+   margin-bottom: 8px;
+   display: flex;
+}
+
+
+.mfr .mfg {
+   margin-right: 15px; 
+   width: 50%;
+}  
+
+.mfr .mfg:last-child {
+   margin-right: 0;
+}
+
+@media (max-width: 650px) {
+   .mfr {
+      display: block;
+   }
+
+   .mfr .mfg {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5px;
+   }
+}
+
+.mfg label {
+   display: block;
+   font-size: 15px;
+   color: #8b4513;
+}
+
+.mfg input, .mfg textarea {
+   width: 100%;
+   box-sizing: border-box;
+   border: none;
+   background: transparent;
+   border-bottom: 2px solid #add8e6;
+   color: #000;
+   padding: 10px 0 10px;
+   outline: none;
+   font-family: inherit;
+
+}

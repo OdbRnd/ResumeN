@@ -2,85 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Базовый курс">
-    <meta name="keywords" content="tag, flag">
-    <title>HTML Cours</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Базовый курс">
+   <meta name="keywords" content="tag, flag">
+   <title>HTML Cours</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img src="" alt="">
-    <img src="foto.jpg" alt="Дмитрий" width="150">
-    <h1>Дмитрий Олифер</h1>
-    <p>Закончил <strong>Таганрогский радиотехнический институт</strong></p>
-    <p>Люблю <em>море, рыбалку.</em></p>
-    <hr>
-    <h2>Мои социальные сети</h2>
-    <a href="https:/ok.ru" target="_blank">Одноклассники</a> 
-    | 
-    <a href="https:/vk.ru" target="_blank">Вконтакте</a> 
-    | 
-    <a href="https:/youtube.com" target="_blank">Youtube</a>
-    <hr>
-    <h2>Мои хобби</h2>  
-    <ol>
-        <li>Плавание</li>
-        <li>Чтение книг (где листики нужно переворачивать)</li>
-        <li>Шашлык</li>
-        <li>Программирование</li>
-    </ol>
-    <hr>
-    <h1>Опыт работы</h1>
-    <table border="1" width="600">
-        <thead>
-            <tr>
-              <th>Название работы</th>
-              <th>Должность</th>
-              <th>Период работы</th>
-            </tr>
-        </thead>
-        <tbody>
-           <tr>
-               <td>ООО Югэкосервис</td>
-               <td>Системный администратор</td>
-               <td>2011 - 2014</td>
-           </tr>
-           <tr>
-               <td>ОАО Райфайзенбаанк</td>
-               <td>Руководитель группы отчётности</td>
-               <td>2009 - 2010</td>
-           </tr>
-           <tr>
-               <td>ООО Югколлекшн</td>
-               <td>Системный администратор</td>
-               <td>2015 - 2017</td>
-           </tr>
-        </tbody>
-        
-    </table>
-    <hr>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-           <label for="name">Ваше имя: </label>
-           <input type="text" id="name" placeholder="Введите имя">
-        </div>
-        
-        <div>
-           <label for="email">Ваш email: </label>
-           <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-           <label for="message">Ваше сообщение:</label>
-           <br>
-           <textarea id="message" cols="40" rows="5" placeholder="Введите сообщение..."></textarea>
-        </div>
-        <button type="submit">  Отправить  </button>
+   <div class="container">
+      <div class="info">
+         <img src="foto.jpg" alt="Дмитрий" class="avatar">
+         <div class="info-text">
+            <h1>Дмитрий Олифер</h1>
+            <p>Закончил <strong>Таганрогский радиотехнический институт</strong></p>
+            <p>Люблю <em>море, рыбалку.</em></p>
+            <hr>
+            <h2>Мои социальные сети</h2>
+            <a href="https:/ok.ru" target="_blank">Одноклассники</a>
+            |
+            <a href="https:/vk.ru" target="_blank">Вконтакте</a>
+            |
+            <a href="https:/youtube.com" target="_blank">Youtube</a>
+         </div>
+      </div>
 
-    </form>
+      <div class="card bg-hobby">
+         <h2>Мои хобби</h2>
+         <ol class="hobby">
+            <li>Плавание</li>
+            <li>Чтение книг (где листики нужно переворачивать)</li>
+            <li>Шашлык</li>
+            <li>Программирование</li>
+         </ol>
+      </div>
 
-    
+      <div class="card bg-work">
+         <h2>Опыт работы</h2>
+         <table class="worked">
+            <thead>
+               <tr class="shapka">
+                  <th>Название работы</th>
+                  <th>Должность</th>
+                  <th>Период работы</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>ООО Югэкосервис</td>
+                  <td>Системный администратор</td>
+                  <td>2011 - 2014</td>
+               </tr>
+               <tr>
+                  <td>ОАО Райфайзенбаанк</td>
+                  <td>Руководитель группы отчётности</td>
+                  <td>2009 - 2010</td>
+               </tr>
+               <tr>
+                  <td>ООО Югколлекшн</td>
+                  <td>Системный администратор</td>
+                  <td>2015 - 2017</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+
+      <div class="card bg-contact">
+
+         <form action="/" class="mf">
+            <h2>Связаться со мной</h2>
+            <div class=mfr>
+               <div class="mfg">
+                  <label for="name">Ваше имя: </label>
+                  <input type="text" id="name" placeholder="Введите имя">
+               </div>
+
+               <div class="mfg">
+                  <label for="email">Ваш email: </label>
+                  <input type="email" id="email" placeholder="Введите email">
+               </div>
+            </div>
+            <div class="mfg">
+               <label for="message">Ваше сообщение:</label>
+               <br>
+               <textarea id="message" cols="40" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <button type="submit" class="btn"> Отправить </button>
+         </form>
+      </div>
+   </div>
 </body>
 
 </html>
